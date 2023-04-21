@@ -96,7 +96,7 @@ const index = () => {
       </svg>
 
       <ul className="flex gap nav-list">
-        <li>About</li>
+        <li>Skills</li>
         <li>Projects</li>
         <li>Contact</li>
         <li>Resume</li>

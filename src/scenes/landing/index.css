@@ -1,5 +1,9 @@
 .landing {
-  margin-top: 8rem;
+  margin-block: 8rem;
+}
+
+.linkedIn {
+  margin-top: 1rem;
 }
 
 .middle {
