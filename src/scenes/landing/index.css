@@ -1,0 +1,17 @@
+.middle {
+  vertical-align: middle;
+}
+
+.title-wrapper {
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.title {
+  color: var(--blue-primary-500);
+  font-size: 5rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}

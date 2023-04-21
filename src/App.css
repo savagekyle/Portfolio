@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: var(--font-main);
+}
+
+/* Variables */
+
+:root {
+  --blue-primary-100: #cccef3;
+  --blue-primary-200: #999ce6;
+  --blue-primary-300: #666bda;
+  --blue-primary-400: #3339cd;
+  --blue-primary-500: #0008c1;
+  --blue-primary-600: #00069a;
+  --blue-primary-700: #000574;
+  --blue-primary-800: #00034d;
+  --blue-primary-900: #000227;
+  --blue-secondary-100: #d3daf4;
+  --blue-secondary-200: #a6b5e9;
+  --blue-secondary-300: #7a90dd;
+  --blue-secondary-400: #4d6bd2;
+  --blue-secondary-500: #2146c7;
+  --blue-secondary-600: #1a389f;
+  --blue-secondary-700: #142a77;
+  --blue-secondary-800: #0d1c50;
+  --blue-secondary-900: #070e28;
+  --alternate-100: #faf5ee;
+  --alternate-200: #f5eadc;
+  --alternate-300: #f0e0cb;
+  --alternate-400: #ebd5b9;
+  --alternate-500: #e6cba8;
+  --alternate-600: #b8a286;
+  --alternate-700: #8a7a65;
+  --alternate-800: #5c5143;
+  --alternate-900: #2e2922;
+  --clr-white: #ffffff;
+  --font-main: "Raleway", sans-serif;
+}
+
+/* Utility classes */
+
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-middle {
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: min(90%, 90rem);
+  margin-inline: auto;
+}
+
+.fullHeight {
+  height: 100svh;
+  height: 100dvh;
+  height: 100vh;
+}
