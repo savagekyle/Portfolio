@@ -1,10 +1,13 @@
+.landing {
+  margin-top: 8rem;
+}
+
 .middle {
   vertical-align: middle;
 }
 
 .title-wrapper {
   line-height: 1.4;
-  letter-spacing: 2px;
 }
 
 .title {
@@ -14,4 +17,22 @@
 
 .subtitle {
   font-size: 2rem;
+}
+
+.portrait {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--blue-primary-500) 0%,
+    var(--clr-white) 100%
+  );
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait img {
+  object-fit: cover;
 }

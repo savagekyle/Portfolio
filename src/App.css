@@ -6,6 +6,7 @@ html {
 
 body {
   background-color: var(--clr-white);
+  letter-spacing: 2px;
 }
 
 * {
@@ -61,7 +62,7 @@ body {
   display: flex;
 }
 
-.flex-middle {
+.flexMiddle {
   align-items: center;
   justify-content: center;
 }
@@ -75,4 +76,12 @@ body {
   height: 100svh;
   height: 100dvh;
   height: 100vh;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
 }
