@@ -1,0 +1,49 @@
+.project {
+  width: fit-content;
+  border-radius: 2rem;
+  margin-inline: auto;
+  min-width: min(90%, auto);
+  margin-bottom: 5rem;
+  box-shadow: 0.5rem 1rem 3rem var(--blue-primary-100);
+}
+.p-img {
+  border-radius: 2rem;
+  height: 25rem;
+  width: 25rem;
+  position: relative;
+}
+
+.p-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.github,
+.live {
+  position: absolute;
+  bottom: 15px;
+  cursor: pointer;
+}
+
+.github {
+  right: 20px;
+}
+
+.live {
+  right: 60px;
+}
+
+.p-content {
+  line-height: 1.7;
+  padding: 30px;
+}
+
+.p-content h1 {
+  padding-bottom: 10px;
+}
+
+.p-content p {
+  max-width: 500px;
+}

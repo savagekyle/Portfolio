@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Landing from "./scenes/landing/index";
 import Navbar from "./scenes/global/navbar/index";
 import About from "./scenes/about/index";
+import Projects from "./scenes/projects/index";
 import { IconButton } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
@@ -17,7 +18,7 @@ function App() {
   }, []);
 
   function handleScroll() {
-    if (window.pageYOffset > 20) {
+    if (window.pageYOffset > 150) {
       setTopButtonVisible(true);
     } else {
       setTopButtonVisible(false);
@@ -32,6 +33,7 @@ function App() {
       <Navbar />
       <Landing />
       <About />
+      <Projects />
       <IconButton
         onClick={scrollToTop}
         id="topBtn"
