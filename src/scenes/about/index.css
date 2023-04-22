@@ -2,4 +2,15 @@
   background-color: var(--blue-primary-700);
   color: var(--clr-white);
   margin-top: 15rem;
+  padding-block: 8rem;
+}
+
+.story {
+  max-width: 35rem;
+  line-height: 2;
+}
+
+.story h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
