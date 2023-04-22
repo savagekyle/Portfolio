@@ -5,7 +5,7 @@
 .linkedIn {
   margin-top: 1rem;
   opacity: 0;
-  animation: fadeIn 3s forwards;
+  animation: fadeIn 2s forwards;
   animation-delay: 3s;
 }
 
@@ -17,14 +17,13 @@
   color: var(--blue-primary-500);
   font-size: 5rem;
   opacity: 0;
-  animation: fadeIn 3s forwards;
-  animation-delay: 0.5s;
+  animation: fadeIn 2s forwards;
 }
 
 .subtitle {
   font-size: 2rem;
   opacity: 0;
-  animation: fadeIn 3s forwards;
+  animation: fadeIn 2s forwards;
   animation-delay: 1.5s;
 }
 
@@ -41,8 +40,7 @@
   position: relative;
   overflow: hidden;
   opacity: 0;
-  animation: fadeIn 3s forwards;
-  animation-delay: 0.5s;
+  animation: fadeIn 2s forwards;
 }
 
 .portrait img {

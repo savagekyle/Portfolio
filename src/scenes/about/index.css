@@ -8,6 +8,23 @@
 .story {
   max-width: 35rem;
   line-height: 2;
+  position: relative;
+  justify-content: center;
+}
+
+.circle {
+  background-image: linear-gradient(
+    to bottom,
+    var(--blue-secondary-400) 0%,
+    var(--clr-white) 100%
+  );
+  border-radius: 50%;
+  height: 18rem;
+  width: 18rem;
+  position: absolute;
+  opacity: 0.1;
+  top: -3rem;
+  left: -3rem;
 }
 
 .story h1 {

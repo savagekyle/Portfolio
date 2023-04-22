@@ -7,7 +7,7 @@ const index = () => {
     <div className="about">
       <div className="container flex spaceBetween">
         <Skills />
-        <div className="story">
+        <div className="story flex column">
           <h1>How I got here...</h1>
           <p>
             I attended the University of Tennessee at Chattanooga with an
@@ -18,6 +18,7 @@ const index = () => {
             minor in Computer Science. I am eager to continue learning and
             pursuing a career in this field that I am so passionate about.
           </p>
+          <div className="circle"></div>
         </div>
       </div>
     </div>
