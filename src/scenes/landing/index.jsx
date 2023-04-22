@@ -3,8 +3,9 @@ import "./index.css";
 import Portrait from "../../assets/vector-portrait.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-const index = () => {
+const Landing = () => {
   return (
     <div className="landing">
       <div className="container flex spaceBetween">
@@ -28,4 +29,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Landing;
