@@ -7,7 +7,7 @@ import { IconButton } from "@mui/material";
 const index = () => {
   return (
     <div className="landing">
-      <div className="container middle flex spaceBetween">
+      <div className="container flex spaceBetween">
         <div className="title-wrapper flex column flexMiddle">
           <h1 className="title">Kyle Savage</h1>
           <h3 className="subtitle">Frontend Developer</h3>

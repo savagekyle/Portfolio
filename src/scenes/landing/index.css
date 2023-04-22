@@ -4,10 +4,9 @@
 
 .linkedIn {
   margin-top: 1rem;
-}
-
-.middle {
-  vertical-align: middle;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 3s;
 }
 
 .title-wrapper {
@@ -17,10 +16,16 @@
 .title {
   color: var(--blue-primary-500);
   font-size: 5rem;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 0.5s;
 }
 
 .subtitle {
   font-size: 2rem;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 1.5s;
 }
 
 .portrait {
@@ -35,6 +40,9 @@
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 0.5s;
 }
 
 .portrait img {
