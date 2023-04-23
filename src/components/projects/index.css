@@ -42,6 +42,7 @@
 
 .p-content h1 {
   padding-bottom: 10px;
+  color: var(--blue-primary-700);
 }
 
 .p-content p {
