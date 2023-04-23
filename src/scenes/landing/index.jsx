@@ -7,17 +7,19 @@ import { IconButton } from "@mui/material";
 const Landing = () => {
   return (
     <div className="landing">
-      <div className="container flex spaceBetween">
+      <div className="landing-content container flex spaceBetween">
         <div className="title-wrapper flex column flexMiddle">
           <h1 className="title">Kyle Savage</h1>
           <h3 className="subtitle">Frontend Developer</h3>
           <div className="linkedIn">
             Let's connect{" "}
-            <IconButton>
-              <LinkedInIcon
-                sx={{ fontSize: "2rem", color: "var(--blue-secondary-500)" }}
-              />
-            </IconButton>
+            <a href="https://www.linkedin.com/in/kylersavage">
+              <IconButton>
+                <LinkedInIcon
+                  sx={{ fontSize: "2rem", color: "var(--blue-secondary-500)" }}
+                />
+              </IconButton>
+            </a>
           </div>
         </div>
         <div className="portrait">

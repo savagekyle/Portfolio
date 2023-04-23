@@ -8,7 +8,11 @@ const index = () => {
   return (
     <div className="projects" id="projects">
       <div className="container">
-        <h1 className="projects-title">My Projects</h1>
+        <h1 className="projects-title">
+          My Projects
+          <hr />
+        </h1>
+
         <Projects
           img={br}
           title="Blackthorn Residential"

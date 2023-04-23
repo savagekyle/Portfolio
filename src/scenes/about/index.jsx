@@ -5,7 +5,7 @@ import Skills from "../../components/skills/index";
 const index = () => {
   return (
     <div className="about" id="about">
-      <div className="container flex spaceBetween">
+      <div className="about-content container flex spaceBetween">
         <Skills />
         <div className="story flex column">
           <h1>How I got here...</h1>

@@ -45,4 +45,33 @@
 
 .portrait img {
   object-fit: cover;
+  height: 120%;
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .landing-content {
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .portrait {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .portrait {
+    height: 300px;
+    width: 300px;
+  }
 }

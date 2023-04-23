@@ -1,15 +1,17 @@
 import React from "react";
 import "./index.css";
+import { useMediaQuery } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 
-const index = (props) => {
+const Projects = (props) => {
+  const isSmallScreen = useMediaQuery("(max-width: 1100px)");
   const reversed = props.reversed;
 
   return (
     <div
       className="project flex"
-      style={{ flexDirection: reversed && "row-reverse" }}
+      style={{ flexDirection: reversed && !isSmallScreen && "row-reverse" }}
     >
       <div className="p-img">
         <img src={props.img} alt="" />
@@ -24,4 +26,4 @@ const index = (props) => {
   );
 };
 
-export default index;
+export default Projects;
