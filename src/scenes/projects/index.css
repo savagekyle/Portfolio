@@ -6,5 +6,13 @@
   margin-inline: auto;
   width: fit-content;
   margin-bottom: 5rem;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: var(--font-secondary);
+}
+
+hr {
+  width: 70%;
+  margin-inline: auto;
+  margin-top: 20px;
+  border-width: 2px;
 }

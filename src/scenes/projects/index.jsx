@@ -1,15 +1,14 @@
 import React from "react";
 import Projects from "../../components/projects/index";
 import "./index.css";
-import placeholder from "../../assets/vector-portrait.png";
 import br from "../../assets/br.png";
 import kebo from "../../assets/kebo.png";
 
 const index = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="container">
-        <h1 className="projects-title">Some of my work</h1>
+        <h1 className="projects-title">My Projects</h1>
         <Projects
           img={br}
           title="Blackthorn Residential"

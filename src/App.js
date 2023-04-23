@@ -4,6 +4,7 @@ import Landing from "./scenes/landing/index";
 import Navbar from "./scenes/global/navbar/index";
 import About from "./scenes/about/index";
 import Projects from "./scenes/projects/index";
+import Contact from "./scenes/contact/index";
 import { IconButton } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
@@ -34,6 +35,7 @@ function App() {
       <Landing />
       <About />
       <Projects />
+      <Contact />
       <IconButton
         onClick={scrollToTop}
         id="topBtn"

@@ -3,7 +3,6 @@ import "./index.css";
 import Portrait from "../../assets/vector-portrait.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 const Landing = () => {
   return (

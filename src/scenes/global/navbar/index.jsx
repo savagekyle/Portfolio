@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import "./index.css";
 
 const index = () => {
@@ -96,9 +97,15 @@ const index = () => {
       </svg>
 
       <ul className="flex gap nav-list">
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <Link to="#about">About</Link>
+        </li>
+        <li>
+          <Link to="#projects">Projects</Link>
+        </li>
+        <li>
+          <Link to="#contact">Contact</Link>
+        </li>
         <li>Resume</li>
       </ul>
     </div>

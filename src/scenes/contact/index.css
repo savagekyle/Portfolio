@@ -1,0 +1,24 @@
+.contact {
+  padding-block: 4rem;
+  background-color: var(--blue-secondary-500);
+  position: relative;
+  color: var(--clr-white);
+}
+
+.contact-info {
+  gap: 4rem;
+}
+
+.contact-header {
+  margin-inline: auto;
+}
+
+.contact-header h1 {
+  margin-bottom: 1.5rem;
+}
+
+.info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
