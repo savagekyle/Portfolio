@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import { useMediaQuery, IconButton } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import "./index.css";
 
-const index = () => {
+const Navbar = () => {
+  const isSmallScreen = useMediaQuery("(max-width: 1100px)");
+  const [menu, setMenu] = useState(false);
+
   return (
     <div className="flex nav">
       <svg
@@ -95,21 +100,32 @@ const index = () => {
           </svg>
         </g>
       </svg>
-
-      <ul className="flex gap nav-list">
-        <li>
-          <Link to="#about">About</Link>
-        </li>
-        <li>
-          <Link to="#projects">Projects</Link>
-        </li>
-        <li>
-          <Link to="#contact">Contact</Link>
-        </li>
-        <li>Resume</li>
-      </ul>
+      {!isSmallScreen ? (
+        <ul className="flex gap nav-list">
+          <li>
+            <Link to="#about">About</Link>
+          </li>
+          <li>
+            <Link to="#projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="#contact">Contact</Link>
+          </li>
+          <li>Resume</li>
+        </ul>
+      ) : (
+        <div className="hamburger">
+          <IconButton
+            onClick={() => {
+              setMenu(!menu);
+            }}
+          >
+            <MenuIcon />
+          </IconButton>
+        </div>
+      )}
     </div>
   );
 };
 
-export default index;
+export default Navbar;

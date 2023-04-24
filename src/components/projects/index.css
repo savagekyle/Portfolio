@@ -2,7 +2,7 @@
   width: fit-content;
   border-radius: 2rem;
   margin-inline: auto;
-
+  max-width: 90%;
   margin-bottom: 5rem;
   box-shadow: 0.5rem 1rem 3rem var(--blue-primary-100);
   position: relative;
@@ -49,13 +49,13 @@
 .p-content p {
   max-width: 500px;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1050px) {
   .project {
     flex-direction: column;
   }
 
   .p-img {
-    min-width: 100%;
+    width: 100%;
   }
 }
 

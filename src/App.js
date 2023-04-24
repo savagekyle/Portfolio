@@ -6,10 +6,12 @@ import About from "./scenes/about/index";
 import Projects from "./scenes/projects/index";
 import Contact from "./scenes/contact/index";
 import { IconButton } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 function App() {
   const [topButtonVisible, setTopButtonVisible] = useState(false);
+  const isSmallScreen = useMediaQuery("(max-width: 800px)");
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -36,21 +38,23 @@ function App() {
       <About />
       <Projects />
       <Contact />
-      <IconButton
-        onClick={scrollToTop}
-        id="topBtn"
-        style={{
-          display: !topButtonVisible && "none",
-          position: "fixed",
-          bottom: "30px",
-          right: "30px",
-          zIndex: "1000",
-          backgroundColor: "var(--blue-secondary-400)",
-          color: "var(--clr-white)",
-        }}
-      >
-        <KeyboardArrowUpIcon sx={{ fontSize: "2rem" }} />
-      </IconButton>
+      {!isSmallScreen && (
+        <IconButton
+          onClick={scrollToTop}
+          id="topBtn"
+          style={{
+            display: !topButtonVisible && "none",
+            position: "fixed",
+            bottom: "30px",
+            right: "30px",
+            zIndex: "1000",
+            backgroundColor: "var(--blue-secondary-400)",
+            color: "var(--clr-white)",
+          }}
+        >
+          <KeyboardArrowUpIcon sx={{ fontSize: "2rem" }} />
+        </IconButton>
+      )}
     </div>
   );
 }

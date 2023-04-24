@@ -9,7 +9,7 @@ const Landing = () => {
     <div className="landing">
       <div className="landing-content container flex spaceBetween">
         <div className="title-wrapper flex column flexMiddle">
-          <h1 className="title">Kyle Savage</h1>
+          <h1 className="title center">Kyle Savage</h1>
           <h3 className="subtitle">Frontend Developer</h3>
           <div className="linkedIn">
             Let's connect{" "}

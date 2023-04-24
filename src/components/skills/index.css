@@ -11,7 +11,6 @@
 
 .skills h1 {
   margin-bottom: 1rem;
-  font-weight: 600;
   color: var(--blue-primary-500);
 }
 
@@ -40,4 +39,24 @@
 
 .skills-list ul {
   line-height: 2.5;
+}
+
+@media (max-width: 500px) {
+  .skills {
+    height: 20rem;
+    width: 20rem;
+    padding: 1.5rem;
+  }
+
+  .skills-list ul {
+    line-height: 2;
+  }
+
+  .skills-list li {
+    font-size: 0.9rem;
+  }
+
+  .skills h1 {
+    font-size: 1.6rem;
+  }
 }
