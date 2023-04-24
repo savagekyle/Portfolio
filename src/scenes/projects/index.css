@@ -16,3 +16,15 @@ hr {
   margin-top: 20px;
   border-width: 2px;
 }
+
+@media (max-width: 800px) {
+  .projects-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .projects-title {
+    font-size: 2rem;
+  }
+}

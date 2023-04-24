@@ -48,12 +48,36 @@
     padding: 1.5rem;
   }
 
+  .skills-list {
+    gap: 2rem;
+  }
+
   .skills-list ul {
     line-height: 2;
   }
 
   .skills-list li {
     font-size: 0.9rem;
+  }
+
+  .skills h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .skills {
+    height: 15rem;
+    width: 15rem;
+    padding: 1rem;
+  }
+
+  .skills-list ul {
+    line-height: 2;
+  }
+
+  .skills-list li {
+    font-size: 0.6rem;
   }
 
   .skills h1 {

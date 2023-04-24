@@ -16,7 +16,10 @@ const Landing = () => {
             <a href="https://www.linkedin.com/in/kylersavage">
               <IconButton>
                 <LinkedInIcon
-                  sx={{ fontSize: "2rem", color: "var(--blue-secondary-500)" }}
+                  sx={{
+                    fontSize: { xs: "1.2rem", sm: "2rem" },
+                    color: "var(--blue-secondary-500)",
+                  }}
                 />
               </IconButton>
             </a>

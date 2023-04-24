@@ -20,3 +20,21 @@ svg {
   color: var(--blue-primary-400);
   font-weight: bold;
 }
+
+@media (max-width: 600px) {
+  svg {
+    max-width: 150px;
+    max-height: 30px;
+  }
+}
+
+@media (max-width: 300px) {
+  .nav {
+    padding: 25px 20px;
+  }
+
+  svg {
+    max-width: 100px;
+    max-height: 20px;
+  }
+}

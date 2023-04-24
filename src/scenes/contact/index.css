@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  word-break: break-all;
 }
 
 @media (max-width: 1100px) {
@@ -28,5 +29,29 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-info {
+    gap: 3rem;
+  }
+
+  .info p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .contact-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .contact-header p {
+    font-size: 0.8rem;
+  }
+
+  .info p {
+    font-size: 0.6rem;
   }
 }
