@@ -31,6 +31,25 @@ function App() {
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
+
+  // Intersection observers
+  document.addEventListener("DOMContentLoaded", function () {
+    const aboutSection = document.querySelector(".skills");
+    const options = {
+      root: null,
+      threshold: 0,
+    };
+
+    const observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach((entry) => {
+        console.log(entry);
+        entry.target.classList.toggle("fade");
+      });
+    }, options);
+
+    observer.observe(aboutSection);
+  });
+
   return (
     <div className="app">
       <Navbar />

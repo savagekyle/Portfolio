@@ -53,6 +53,7 @@ body {
   --linkedin-blue: #0077b5;
   --font-main: "Raleway", sans-serif;
   --font-secondary: "Playfair Display", serif;
+  --slide-down: 1s ease-out 0s 1 slideDown;
 }
 
 /* Utility classes */
@@ -88,6 +89,9 @@ body {
 .column {
   flex-direction: column;
 }
+.fade {
+  animation: fadeIn 3s forwards;
+}
 
 @keyframes fadeIn {
   0% {
@@ -95,5 +99,32 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }
