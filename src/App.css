@@ -89,8 +89,18 @@ body {
 .column {
   flex-direction: column;
 }
-.fade {
-  animation: fadeIn 3s forwards;
+
+.slideInLeft {
+  animation: slideLeft 2s forwards;
+}
+
+.slideInRight {
+  animation: slideRight 2s forwards;
+  animation-delay: 0.5s;
+}
+
+.slideUp {
+  animation: projectsSlideUp 2s;
 }
 
 @keyframes fadeIn {
@@ -111,7 +121,7 @@ body {
   }
 }
 
-@keyframes slideOut {
+@keyframes slideDown {
   0% {
     transform: translateY(-100%);
   }
@@ -120,11 +130,42 @@ body {
   }
 }
 
-@keyframes slideIn {
+@keyframes slideUp {
   0% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(-100%);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes projectsSlideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

@@ -7,6 +7,7 @@
   padding: 2.5rem;
   position: relative;
   z-index: 1;
+  opacity: 0;
 }
 
 .skills h1 {

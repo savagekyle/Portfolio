@@ -33,22 +33,79 @@ function App() {
   }
 
   // Intersection observers
-  document.addEventListener("DOMContentLoaded", function () {
-    const aboutSection = document.querySelector(".skills");
+
+  useEffect(() => {
+    const skillsSection = document.querySelector(".skills");
+    const aboutSection = document.querySelector(".story");
+    const projects = document.querySelectorAll(".project");
+    const projectsTitle = document.querySelector(".projects-title");
+    const infoSection = document.querySelector(".info");
+    const contactSection = document.querySelector(".contact-header");
     const options = {
       root: null,
-      threshold: 0,
     };
 
-    const observer = new IntersectionObserver(function (entries, observer) {
+    const skillsObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
       entries.forEach((entry) => {
-        console.log(entry);
-        entry.target.classList.toggle("fade");
-      });
-    }, options);
+        if (!entry.isIntersecting) {
+          return;
+        }
 
-    observer.observe(aboutSection);
-  });
+        entry.target.classList.toggle("slideInLeft");
+        observer.unobserve(entry.target);
+      });
+    },
+    options);
+
+    const aboutObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.toggle("slideInRight");
+        observer.unobserve(entry.target);
+      });
+    },
+    options);
+
+    const projectsObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.toggle("slideUp");
+        observer.unobserve(entry.target);
+      });
+    },
+    options);
+
+    projects.forEach((project) => {
+      projectsObserver.observe(project);
+    });
+
+    skillsObserver.observe(skillsSection);
+    aboutObserver.observe(aboutSection);
+    skillsObserver.observe(contactSection);
+    skillsObserver.observe(projectsTitle);
+    projectsObserver.observe(infoSection);
+
+    return () => {
+      skillsObserver.disconnect();
+      aboutObserver.disconnect();
+      projectsObserver.disconnect();
+    };
+  }, []);
 
   return (
     <div className="app">

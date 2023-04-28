@@ -29,11 +29,11 @@ svg {
 }
 
 .mobile-nav.open {
-  animation: slideOut 2s forwards;
+  animation: slideDown 2s forwards;
 }
 
 .mobile-nav.closed {
-  animation: slideOut 2s forwards;
+  animation: slideUp 2s forwards;
 }
 
 .mobile-nav ul {
