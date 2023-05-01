@@ -21,24 +21,22 @@
   border-radius: 2rem;
 }
 
-.github,
 .live {
-  position: absolute;
-  bottom: 15px;
   cursor: pointer;
 }
 
-.github {
-  right: 20px;
-}
-
-.live {
-  right: 60px;
+.project-links {
+  gap: 10px;
+  position: absolute;
+  bottom: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .p-content {
   line-height: 1.7;
   padding: 30px;
+  position: relative;
 }
 
 .p-content h1 {
@@ -47,8 +45,10 @@
 }
 
 .p-content p {
-  max-width: 500px;
+  max-width: 600px;
+  margin-bottom: 40px;
 }
+
 @media (max-width: 1050px) {
   .project {
     flex-direction: column;

@@ -21,7 +21,12 @@ const index = () => {
           </p>
           <p>
             <LinkedInIcon />
-            www.linkedin.com/in/kylersavage
+            <a
+              href="https://www.linkedin.com/in/kylersavage"
+              style={{ textDecoration: "none", color: "var(--clr-white)" }}
+            >
+              www.linkedin.com/in/kylersavage
+            </a>
           </p>
         </div>
       </div>

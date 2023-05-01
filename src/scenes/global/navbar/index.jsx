@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { useMediaQuery, IconButton } from "@mui/material";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogActions from "@mui/material/DialogActions";
+import Button from "@mui/material/Button";
+import resume from "../../../assets/resume.pdf";
 
 import { Divide as Hamburger } from "hamburger-react";
 import "./index.css";
@@ -11,6 +18,25 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenu(!menu);
+  };
+
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleDownload = () => {
+    const fileName = "Kyle Savage Resume.pdf";
+    const a = document.createElement("a");
+    a.href = resume;
+    a.download = fileName;
+    a.click();
+    handleClose();
   };
 
   return (
@@ -117,7 +143,37 @@ const Navbar = () => {
             <li>
               <Link to="#contact">Contact</Link>
             </li>
-            <li>Resume</li>
+            <li onClick={handleClickOpen}>Resume</li>
+            <Dialog
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="alert-dialog-title"
+              aria-describedby="alert-dialog-description"
+            >
+              <DialogTitle id="alert-dialog-title">
+                {"Confirm Download"}
+              </DialogTitle>
+              <DialogContent>
+                <DialogContentText id="alert-dialog-description">
+                  Are you sure you want to download Kyle Savage's Resume?
+                </DialogContentText>
+              </DialogContent>
+              <DialogActions>
+                <Button
+                  onClick={handleClose}
+                  sx={{ color: "var(--blue-primary-500)" }}
+                >
+                  Cancel
+                </Button>
+                <Button
+                  onClick={handleDownload}
+                  sx={{ color: "var(--blue-primary-500)" }}
+                  autoFocus
+                >
+                  Download
+                </Button>
+              </DialogActions>
+            </Dialog>
           </ul>
         ) : (
           <div className="hamburger">
@@ -145,7 +201,37 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-            <li>Resume</li>
+            <li onClick={handleClickOpen}>Resume</li>
+            <Dialog
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="alert-dialog-title"
+              aria-describedby="alert-dialog-description"
+            >
+              <DialogTitle id="alert-dialog-title">
+                {"Confirm Download"}
+              </DialogTitle>
+              <DialogContent>
+                <DialogContentText id="alert-dialog-description">
+                  Are you sure you want to download Kyle Savage's Resume?
+                </DialogContentText>
+              </DialogContent>
+              <DialogActions>
+                <Button
+                  onClick={handleClose}
+                  sx={{ color: "var(--blue-primary-500)" }}
+                >
+                  Cancel
+                </Button>
+                <Button
+                  onClick={handleDownload}
+                  sx={{ color: "var(--blue-primary-500)" }}
+                  autoFocus
+                >
+                  Download
+                </Button>
+              </DialogActions>
+            </Dialog>
           </ul>
         </div>
       )}
