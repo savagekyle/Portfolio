@@ -17,6 +17,10 @@
   margin-bottom: 1.5rem;
 }
 
+.info {
+  opacity: 0;
+}
+
 .info p {
   display: flex;
   align-items: center;

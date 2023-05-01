@@ -98,7 +98,7 @@ function App() {
     aboutObserver.observe(aboutSection);
     skillsObserver.observe(contactSection);
     skillsObserver.observe(projectsTitle);
-    projectsObserver.observe(infoSection);
+    aboutObserver.observe(infoSection);
 
     return () => {
       skillsObserver.disconnect();
