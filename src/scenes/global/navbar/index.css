@@ -31,11 +31,11 @@ svg {
 }
 
 .mobile-nav.open {
-  animation: slideDown 2s forwards;
+  animation: slideDown 1s forwards;
 }
 
 .mobile-nav.closed {
-  animation: slideUp 2s forwards;
+  animation: slideUp 1s forwards;
 }
 
 .mobile-nav ul {
@@ -46,7 +46,7 @@ svg {
 
 .mobile-nav.open ul {
   animation: fadeIn 2s forwards;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .mobile-nav.closed ul {
