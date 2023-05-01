@@ -36,7 +36,7 @@ const index = () => {
           title="My Portfolio"
           content="This one is obvious, but it is a project that I am proud of. It is my personal portolio and it was built to showcase what I can do as a Frontend Developer. Utilizing mainly just React, CSS, and Javascript, I was able to put together this dynamic and responsive personal website. Material UI was utilized for the icons and pop-up dialogs. I also created the vector image that was used for the landing page."
           github="https://github.com/savagekyle/Portfolio"
-          live=""
+          live="https://savagekyle.com"
         />
         <Projects
           img={udemy}

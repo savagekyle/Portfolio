@@ -98,16 +98,16 @@ a:hover {
 }
 
 .slideInLeft {
-  animation: slideLeft 2s forwards;
+  animation: slideLeft 1s forwards;
 }
 
 .slideInRight {
-  animation: slideRight 2s forwards;
-  animation-delay: 0.5s;
+  animation: slideRight 1s forwards;
+  animation-delay: 0.25s;
 }
 
 .slideUp {
-  animation: projectsSlideUp 2s;
+  animation: projectsSlideUp 1s;
 }
 
 @keyframes fadeIn {
