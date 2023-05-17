@@ -27,10 +27,7 @@
 
 .project-links {
   gap: 10px;
-  position: absolute;
-  bottom: 0.8rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 20px auto 0;
 }
 
 .p-content {

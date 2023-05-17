@@ -11,12 +11,14 @@ const index = () => {
           <h1>How I got here...</h1>
           <p>
             I attended the University of Tennessee at Chattanooga with an
-            initial major of Computer Science. I came to realize that I wasn't
-            learning the topics that interested me, and decided it was time to
-            take things into my own hands. As I continued improving my skills as
-            a developer, I completed a degree in Marketing with a minor in
-            Computer Science. I am eager to continue learning and pursuing a
-            career in the field that I am so passionate about.
+            initial major of Computer Science. However, I discovered that the
+            Computer Science curriculum did not align with my specific areas of
+            interest and professional aspirations. From that point on, I took it
+            upon myself to continue studying Computer Science on my own time. As
+            I continued improving my skills as a developer, I completed a degree
+            in Marketing with a minor in Computer Science. I am eager to
+            continue learning and pursuing a career in the field that I am so
+            passionate about.
           </p>
           <div className="circle"></div>
         </div>

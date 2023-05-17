@@ -15,6 +15,7 @@ const Projects = (props) => {
   const isSmallScreen = useMediaQuery("(max-width: 1100px)");
   const reversed = props.reversed;
   const [open, setOpen] = useState(false);
+  const [readMoreOpen, setReadMoreOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(true);
@@ -24,17 +25,50 @@ const Projects = (props) => {
     setOpen(false);
   };
 
+  const handleReadMoreOpen = () => {
+    setReadMoreOpen(true);
+  };
+
+  const handleReadMoreClose = () => {
+    setReadMoreOpen(false);
+  };
+
+  const renderContent = () => {
+    if (props.content.length <= 300) {
+      return <p>{props.content}</p>;
+    } else {
+      return (
+        <>
+          <p>{props.content.substring(0, 300)}...</p>
+          <Button
+            onClick={handleReadMoreOpen}
+            variant="outlined"
+            sx={{
+              color: "var(--blue-primary-500)",
+              borderColor: "var(--blue-primary-500)",
+              width: "fit-content",
+              marginInline: "auto",
+              paddingInline: "2rem",
+            }}
+          >
+            Read More
+          </Button>
+        </>
+      );
+    }
+  };
+
   return (
     <div
       className="project flex"
       style={{ flexDirection: reversed && !isSmallScreen && "row-reverse" }}
     >
-      <div className="p-img ">
+      <div className="p-img">
         <img src={props.img} alt="" />
       </div>
       <div className="p-content flex column">
         <h1 className="center">{props.title}</h1>
-        <p>{props.content}</p>
+        {renderContent()}
         <div className="project-links flex">
           <Link to={props.github}>
             <GitHubIcon className="github" sx={{ fontSize: "1.8rem" }} />
@@ -64,6 +98,32 @@ const Projects = (props) => {
           <Button
             onClick={handleClose}
             sx={{ color: "var(--blue-primary-500)" }}
+          >
+            Close
+          </Button>
+        </DialogActions>
+      </Dialog>
+      <Dialog open={readMoreOpen} onClose={handleReadMoreClose}>
+        <DialogTitle>{props.title}</DialogTitle>
+        <DialogContent>
+          <DialogContentText sx={{ marginBottom: "20px" }}>
+            {props.content}
+          </DialogContentText>
+          <DialogContentText sx={{ marginBottom: "10px", fontWeight: "600" }}>
+            Tech Stack:
+          </DialogContentText>
+          <DialogContentText
+            sx={{ fontWeight: "600", color: "var(--blue-secondary-400)" }}
+          >
+            {props.tech}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button
+            onClick={handleReadMoreClose}
+            sx={{
+              color: "var(--blue-primary-500)",
+            }}
           >
             Close
           </Button>
