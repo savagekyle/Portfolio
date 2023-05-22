@@ -7,7 +7,7 @@
 
 .story {
   max-width: 35rem;
-  line-height: 2.4;
+  line-height: 2.2;
   position: relative;
   justify-content: center;
   opacity: 0;
@@ -30,7 +30,7 @@
 
 .story h1 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 @media (max-width: 1200px) {
