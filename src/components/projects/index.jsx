@@ -70,11 +70,11 @@ const Projects = (props) => {
         <h1 className="center">{props.title}</h1>
         {renderContent()}
         <div className="project-links flex">
-          <Link to={props.github}>
+          <Link to={props.github} target="_blank">
             <GitHubIcon className="github" sx={{ fontSize: "1.8rem" }} />
           </Link>
           {props.live ? (
-            <Link to={props.live}>
+            <Link to={props.live} target="_blank">
               <LaunchIcon className="live" sx={{ fontSize: "1.8rem" }} />
             </Link>
           ) : (

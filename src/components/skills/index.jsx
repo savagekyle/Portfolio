@@ -19,6 +19,7 @@ const index = () => {
           <li>MUI</li>
           <li>Tailwind</li>
           <li>Bootstrap</li>
+          <li>Wordpress</li>
         </ul>
       </div>
     </div>

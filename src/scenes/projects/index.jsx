@@ -5,6 +5,7 @@ import br from "../../assets/br.png";
 import kebo from "../../assets/kebo.png";
 import portfolio from "../../assets/portfolio.png";
 import udemy from "../../assets/udemy-certificate.jpg";
+import drone from "../../assets/savagedrone.png";
 
 const index = () => {
   return (
@@ -49,6 +50,14 @@ const index = () => {
           live=""
           tech="React, CSS, Bootstrap, MongoDB, Express, Node, Google auth, APIs, SQL, JQuery"
           reversed={true}
+        />
+        <Projects
+          img={drone}
+          title="Savage Drone Co."
+          content="This is the first Wordpress site that I have created. The project uses a minimalistic design for a hypothetical aerial photography company. It includes services that the company could offer, as well as a list of benefits and advantages of using drone photography. My previous experience as a drone pilot inspired the idea for this company and made the project a lot of fun to work on."
+          github=""
+          live="https://savagewordpress.online"
+          tech="Wordpress, Yoast SEO, Elementor"
         />
       </div>
     </div>
